@@ -257,11 +257,11 @@ color: #1C9CEA;
   /* Mobile */
 @media (max-width: 600px) {
   .navbar {
-    /* height: 110px; */
+    height: 110px;
   }
-  .navbar   {
+  /* .navbar   {
     display: none;
-  }
+  } */
 
   .navbar a.icon {
     float: right;
