@@ -43,7 +43,6 @@ h2 {
 
 /* Navbar */
 
-
 .navbar {
     background-color: var(--light-color);
     height: 70px;
@@ -59,6 +58,12 @@ h2 {
     color: #ff5100;
     padding: 10px;
     margin: 0 5px;
+}
+
+a.icon {
+  display: none;
+  padding: 10px;
+  margin: 0 5px;
 }
 
 .navbar a:hover{
@@ -118,6 +123,34 @@ h2 {
 .showcase-text {
     animation: slideInFromLeft 1s ease-in;
 }
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
 .showcase::before,
 .showcase::after {
   content: '';
@@ -153,6 +186,30 @@ color: #B32E87;
 
 .fa-twitter:hover {
 color: #1C9CEA;
+}
+
+.scrolltop {
+  position: fixed;
+  bottom: 15px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 60;
+  transition: opacity .3s ease;
+  visibility: visible;
+}
+
+.scrolltop i {
+  height:35px;
+  width: 35px;
+  display: block;
+  font-size: 20px;
+  background-color: #333;
+  color: #ff5100;
+  position: relative;
+  border-radius: 3px;
+  transition: all .3s linear;
 }
 
 /* Animations */
@@ -195,3 +252,32 @@ color: #1C9CEA;
       transform: translateX(0);
     }
   }
+
+
+  /* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    /* height: 110px; */
+  }
+  .navbar   {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+}
