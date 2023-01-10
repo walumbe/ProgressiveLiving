@@ -173,6 +173,52 @@ a.icon {
   -ms-transform: skewY(-3deg);
 }
 
+/* Services */
+
+.services {
+  padding-top: 100px;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.num {
+  font-weight: 900;
+  font-family: Georgia;
+  color: #4B4F58;
+  font-size: 90px;
+}
+
+.explore-button {
+  background: #ff5100;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 45%;
+  text-transform: uppercase;
+  margin-top: 14px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.btn-explore{
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  background: #ff5100;
+  
+}
+
+.btn-explore a {
+  color: #fff;
+}
+
+.explore-button:hover{
+  top: -10px;
+}
+
+
 /* Stats */
 .stats {
   padding-top: 100px;

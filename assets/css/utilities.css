@@ -12,8 +12,13 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
+    top: 0;
+  transition: top ease 0.5s;
 }
 
+.card:hover {
+  top: -10px;
+}
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -115,10 +120,12 @@
   }
   
   .grid-3 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .grid-4 {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
