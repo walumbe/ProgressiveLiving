@@ -14,7 +14,7 @@ a {
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 800;
-    color: #20212c;
+    color: #ff5100;
 }
 
 img {
@@ -86,7 +86,11 @@ section {
 }
 
 .navbar {
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 20px rgba(254,81, 0);
+}
+
+.navbar a {
+    color: #ff5100;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -189,6 +193,11 @@ footer a {
 
 
 
+
+Progressive Living Wellness Center (PLWC) 
+is a Behavioral Health Outpatient clinic providing 
+therapy to adults who need help to confront barriers 
+that interfere with mental, emotional, physical, and spiritual wellbeing.
 
 
 
