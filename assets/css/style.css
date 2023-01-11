@@ -249,8 +249,10 @@ a.icon {
 }
 
 .footer {
-  padding: 20px;
+  margin-top: 20px;
+  padding: 30px;
   animation:slideInFromBottom 1.5s ease-in;
+  background-color: lightgrey;
 }
   
 .fa-facebook:hover {
